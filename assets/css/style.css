@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    margin: 0;
+    background-image: url("/assets/image/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-date-w{
+    width: 330px;
+    padding: 2rem;
+}
+.header-date{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.date-days{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.date-dates{
+    width: 100%;
+    text-align: center;
+    margin-top: -1.5rem;
+    font-size: 5rem;
+}
+
+.header-date-row{
+    margin-top: -2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date-years{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    border-right: 1px solid #000 ;
+}
+
+.date-months{
+    width: 100%;
+    
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.header-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 250px;
+}
+
+.clock-el{
+    width: 100%;
+    border-right: 1px solid #fff;
+}
+
+.clock-number{
+    text-align: left;
+    font-size: 5rem;
+}
+
+.clock-name{
+    border-top: 1px solid #fff;
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: -1.5rem;
+}
+
+.header-quotes{
+    width: 330px;
+    height: 200px;
+    padding: 3rem 2rem 0 0;
+    text-align: justify;
+}
