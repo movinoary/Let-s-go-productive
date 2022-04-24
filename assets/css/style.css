@@ -9,15 +9,25 @@
 
 .header{
     margin: 0;
-    background-image: url("/assets/image/background.jpg");
+    /* background-image: url("/assets/image/background.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: center center; */
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+video{
+    position: fixed;
+    z-index: 0;
+}
+
+.top{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 3;
 }
-
 .header-date-w{
     width: 330px;
     padding: 2rem;
@@ -97,4 +107,129 @@
     height: 200px;
     padding: 3rem 2rem 0 0;
     text-align: justify;
+}
+
+
+
+
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.todo-list{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.center h1{
+    color: rgb(47, 65, 200);
+    text-align: left;
+    font-size: 5rem;
+    opacity: 0.4;
+}
+
+.center form{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 100%;
+    width: 200px;
+}
+
+.input{
+    border: none;
+    color: #444;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    display: block;
+    width: 200px;
+}
+
+.input::placeholder{
+    color: #d5d5d5;
+}
+
+.todos{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.todos li{
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    width: 100px;
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+}
+
+.todos li.complated{
+    color: #e5e5e5;
+    text-decoration: line-through;
+}
+
+.center small{
+    color: #b5b5b5;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.6rem;
+}
+
+.add{
+    background-color: #9ec862;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    top: 1rem;
+    right: 1rem;
+
+}
+
+.note{
+    width: 300px;
+    height: 250px;
+    margin: 0 2rem 0 0;
+    box-shadow: 0 0 10px  4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.tools{
+    background-color: #9ec862;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tools h2{
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+}
+
+.note .main{
+    background-color: #eee;
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+}
+
+.note textarea{
+    outline: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: none;
+    width: 100%;
+    height: 250px;
+}
+
+.note .hidden{
+    display: none;
 }
