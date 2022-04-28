@@ -71,7 +71,6 @@ video{
 
 .date-months{
     width: 100%;
-    
     text-align: center;
     font-size: 1.5rem;
 }
@@ -105,7 +104,7 @@ video{
 .header-quotes{
     width: 330px;
     height: 200px;
-    padding: 3rem 2rem 0 0;
+    padding: 3rem 4rem 0 0;
     text-align: justify;
 }
 
@@ -117,6 +116,7 @@ video{
     flex-direction: row;
     justify-content: space-between;
     z-index: 3;
+    margin-top: -3rem;
 }
 
 .todo-list{
@@ -126,10 +126,10 @@ video{
     align-items: center;
 }
 .center h1{
-    color: rgb(47, 65, 200);
+    color: rgb(0, 0, 0);
     text-align: left;
     font-size: 5rem;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .center form{
@@ -140,7 +140,8 @@ video{
 
 .input{
     border: none;
-    color: #444;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.7);
     font-size: 1rem;
     padding: 0.5rem 0.5rem;
     display: block;
@@ -148,11 +149,13 @@ video{
 }
 
 .input::placeholder{
-    color: #d5d5d5;
+    color: #f4f4f4;
 }
 
 .todos{
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    color: #f4f4f4;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -161,7 +164,7 @@ video{
 .todos li{
     border-top: 1px solid #e5e5e5;
     cursor: pointer;
-    width: 100px;
+    width: 100%;
     padding: 0.5rem 0.5rem;
     font-size: 1rem;
 }
@@ -176,6 +179,7 @@ video{
     text-align: center;
     margin-top: 5px;
     font-size: 0.6rem;
+    margin-bottom: 2rem;
 }
 
 .add{
@@ -193,13 +197,13 @@ video{
 .note{
     width: 300px;
     height: 250px;
-    margin: 0 2rem 0 0;
-    box-shadow: 0 0 10px  4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    margin: 0 3rem 0 0;
+    box-shadow: 0 0 7px  4px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tools{
-    background-color: #9ec862;
+    background-color: #fff;
     padding: 0.5rem;
     display: flex;
     justify-content: flex-end;
@@ -208,20 +212,23 @@ video{
 .tools h2{
     cursor: pointer;
     background-color: transparent;
-    color: #fff;
+    color: #0f0f0f;
     border: none;
     font-size: 1rem;
     margin-left: 0.5rem;
 }
 
 .note .main{
-    background-color: #eee;
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     width: 100%;
     height: 100px;
 }
 
 .note textarea{
+    resize: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #e5e5e5;
     outline: none;
     font-family: inherit;
     font-size: 1.2rem;
