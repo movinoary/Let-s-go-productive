@@ -1,13 +1,3 @@
-const days = [
-    'minggu',
-    'senin',
-    'selasa',
-    'rabu',
-    'kamis',
-    'jumat',
-    'sabtu',
-  ]
-
 function getTime(){
     let dateTime = new Date();
     
