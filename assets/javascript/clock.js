@@ -89,8 +89,6 @@ function getTime(){
         second = '0' + second 
     }
     
-    // console.log(`${hour} ${minute} ${second}`)
-
     document.getElementById('years').innerHTML = years
     document.getElementById('months').innerHTML = months
     document.getElementById('dates').innerHTML = dates
