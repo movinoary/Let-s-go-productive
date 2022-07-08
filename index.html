@@ -1,78 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Let's Go Productive</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <video autoplay muted loop id="myVideo">
-            <source src="/assets/image/vid-bg 1.mp4" type="video/mp4">
-          </video>
-        <div class="top">
-            <div class="header-date-w">
-                <div class="header-date">
-                    <div class="date-days">
-                        <p class="date-number" id="days">0</p>
-                    </div>
-                    <div class="date-dates">
-                        <p class="date-number" id="dates">0</p>
-                    </div>
-                    <div class="header-date-row">
-                        <div class="date-years">
-                            <p class="date-number" id="years">0</p>
-                        </div>
-                        <div class="date-months">
-                            <p class="date-number" id="months">September</p>
-                        </div>
-                    </div>
-                </div>
+      <!-- <video autoplay muted loop id="myVideo">
+        <source src="/assets/image/baxkground.jpg" type="video/mp4" />
+      </video> -->
+      <div class="top">
+        <div class="header-date-w">
+          <div class="header-date">
+            <div class="date-days">
+              <p class="date-number" id="days">0</p>
             </div>
-            <div class="header-time">
-                <div class="clock-el hours-c">
-                    <p class="clock-number" id="hours">0</p>
-                    <p class="clock-name">hours</p>
-                </div>
-                <div class="clock-el minutes-c">
-                    <p class="clock-number" id="minutes">0</p>
-                    <p class="clock-name">minute</p>
-                </div>
-                <div class="clock-el seconds-c">
-                    <p class="clock-number" id="seconds">0</p>
-                    <p class="clock-name">second</p>
-                </div>
+            <div class="date-dates">
+              <p class="date-number" id="dates">0</p>
             </div>
-            <div class="header-quotes">
-                <p class="quotes-text">Mari Refresing</p>
-                <p class="quotes-text" id="quotes"></p>
+            <div class="header-date-row">
+              <div class="date-years">
+                <p class="date-number" id="years">0</p>
+              </div>
+              <div class="date-months">
+                <p class="date-number" id="months">September</p>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="center">
-            <div class="todo-list">
-                <h1>todos</h1>
-                <form id="form">
-                    <input type="text" id="input" class="input" placeholder="Enter You ToDo" autoomplate="off"/>
-                    <ul class="todos" id="todos"></ul>
-                </form>
-                <small>Right Click to Delete the Todo <br/> Left Click to mark as complate. </small>
-            </div>
-            <div class="note">
-                <div class="tools">
-                    <h2>Notes</h2>
-                </div>
-                <div class="main hidden"></div>
-                <textarea></textarea>
-            </div>
-            
+        <div class="header-time">
+          <div class="clock-el hours-c">
+            <p class="clock-number" id="hours">0</p>
+            <p class="clock-name">hours</p>
+          </div>
+          <div class="clock-el minutes-c">
+            <p class="clock-number" id="minutes">0</p>
+            <p class="clock-name">minute</p>
+          </div>
+          <div class="clock-el seconds-c">
+            <p class="clock-number" id="seconds">0</p>
+            <p class="clock-name">second</p>
+          </div>
         </div>
-    </div>  
+        <div class="header-quotes">
+          <p class="quotes-text">Mari Refresing</p>
+          <p class="quotes-text" id="quotes"></p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="todo-list">
+          <h1>todos</h1>
+          <form id="form">
+            <input
+              type="text"
+              id="input"
+              class="input"
+              placeholder="Enter You ToDo"
+              autoomplate="off"
+            />
+            <ul class="todos" id="todos"></ul>
+          </form>
+          <small
+            >Right Click to Delete the Todo <br />
+            Left Click to mark as complate.
+          </small>
+        </div>
+        <div class="note">
+          <div class="tools">
+            <h2>Notes</h2>
+          </div>
+          <div class="main hidden"></div>
+          <textarea></textarea>
+        </div>
+      </div>
+    </div>
     <script src="/assets/javascript/clock.js"></script>
     <script src="/assets/javascript/todo.js"></script>
     <script src="/assets/javascript/api.js"></script>
-</body>
+  </body>
 </html>
