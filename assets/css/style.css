@@ -33,11 +33,12 @@ video {
   padding: 2rem;
 }
 .header-date {
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .date-days {
@@ -91,21 +92,32 @@ video {
 
 .clock-number {
   text-align: left;
-  font-size: 5rem;
+  width: 120px;
+  margin: 1rem;
+  font-size: 6rem;
 }
 
 .clock-name {
   border-top: 1px solid #fff;
   text-align: right;
-  font-size: 1.2rem;
-  margin-top: -1.5rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-top: -1.7rem;
+  padding-right: 1rem;
 }
 
 .header-quotes {
-  width: 330px;
-  height: 200px;
+  width: 350px;
+  height: 250px;
   padding: 3rem 4rem 0 0;
   text-align: justify;
+}
+
+.quotes-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .center {
@@ -117,7 +129,8 @@ video {
 }
 
 .todo-list {
-  width: 300px;
+  width: 350px;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +206,7 @@ video {
 .note {
   width: 300px;
   height: 250px;
-  margin: 0 3rem 0 0;
+  margin: 4rem 3rem 0 0;
   box-shadow: 0 0 7px 4px rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 0, 0, 0.5);
 }
